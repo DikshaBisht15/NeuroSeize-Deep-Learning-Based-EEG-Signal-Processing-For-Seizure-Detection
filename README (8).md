@@ -1,4 +1,4 @@
-# EEG Seizure Detection with a 2D CNN
+# NeuroSeize-Deep Learning Based EEG Signal Processing For Seizure Detection
 
 Deep-learning pipeline for detecting epileptic seizures from scalp EEG recordings using the [CHB-MIT Scalp EEG Database](https://physionet.org/content/chbmit/1.0.0/). Multi-channel EEG signals are sliced into short overlapping windows, converted into image-like tensors, and classified as **seizure** / **non-seizure** by a convolutional neural network built in PyTorch.
 
@@ -68,15 +68,6 @@ Open `siezure-detection-eeg.ipynb` and run the cells in order:
 2. Train the model (`num_epochs`, learning rate, and window/step sizes are configurable near the top of the training section).
 3. Run the test-set evaluation cells to get the classification report, ROC curve, and AUC.
 4. Run the peak-detection cells on a chosen test recording to visualize predicted seizure onsets against the raw EEG.
-
-## Results
-
-The notebook reports:
-- A classification report (precision/recall/F1) on window-level seizure vs. non-seizure predictions
-- An ROC curve with AUC score on held-out test recordings
-- Example plots overlaying detected seizure-onset points on raw multi-channel EEG traces
-
-*(Fill in your specific numbers here once you have a final trained model, e.g. AUC = 0.XX, precision/recall = 0.XX/0.XX.)*
 
 ## Notes / Limitations
 
